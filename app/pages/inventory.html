@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+
+    <link rel="stylesheet" href="../assets/css/mystyle.css">
+    <script src="../scripts/inventoryController.js"></script>
+</head>
+<body class="w-cnt">
+    <div class="container">
+        <h1>List</h1>
+        <!-- input form -->
+        <div class="form-container">
+            <input type="text" name="" id="item_name" placeholder="Item Name" class="inpt_pad">
+            <input type="number" name="" id="item_quantity" placeholder="Item Quantity" class="inpt_pad">
+            <textarea name="" id="item_description" class="inpt_des inpt_pad" placeholder="Description"></textarea>
+            <button type="button" class="inpt_des inpt_pad" onclick="addItem('Item 1', '24', 'Test Item')">Add Item</button>
+        </div>
+        <br>
+        <h2>Items</h2>
+        <!-- item list -->
+         <div class="item-container">
+            <div class="item">
+                <span>Item Name</span>
+                <br>
+                <span>Item Quantity</span>
+                <br>
+                <span>Description</span>
+            </div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+         </div>
+    </div>
+</body>
+</html>

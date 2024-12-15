@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+
+    <link rel="stylesheet" href="../assets/css/mystyle_old.css">
+    <script src="../scripts/inventoryController_old.js"></script>
+    <script src="../scripts/sidebarNavigation.js"></script>
+</head>
+
+<body class="w-cnt">
+    
+    <!-- content area -->
+    <div class="content-area page-w-sidebar ">
+        <div class="p-w-s-spn">
+            <h1>Inventory Items</h1>
+            <hr>
+        </div>
+        <!-- side bar -->
+         <div class="sidebar">
+            <button type="button" class="s-btn" onclick="hideAllExept(0)">Dashboard</button>
+            <button type="button" class="s-btn" onclick="hideAllExept(1)">Add New Item</button>
+            <button type="button" class="s-btn" onclick="hideAllExept(2)">Item list</button>
+            <button type="button" class="s-btn" onclick="hideAllExept(3)">Archived</button>
+            <button type="button" class="s-btn" onclick="hideAllExept(4)">History</button>
+         </div>
+
+         <!-- content -->
+        <div class="content">
+            <div class="section">
+                <div class="dashboard-con ">
+                    <div class="dsh-item d-spn-2">
+                        Date Today
+                        <h1 id="t-dt-sh">00-00-0000</h1>
+                    </div>
+                    <div class="dsh-item ">
+                        Total Items
+                        <h1 id="t-itm-sh">00</h1>
+                    </div>
+                    <div class="dsh-item ">
+                        Total Quantity
+                        <h1 id="t-qnt-sh">00</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h1>Add new Item</h1>
+                <!-- input form -->
+                <div class="form-container">
+                    <span class="form-input-sp2">Input Form</span>
+                    <input type="text" name="" class="form-input" placeholder="Item Name" id="item_name">
+                    <input type="number" name="" class="form-input" placeholder="Quantity" id="item_quantity">
+                    <textarea name="" class="form-input form-input-sp2" placeholder="Description"
+                        id="item_description"></textarea>
+                    <button class="form-input-sp2" id="add_btn">Add</button>
+                </div>
+
+                <br>
+
+                <!-- error alert -->
+                <div class="error" id="err_ele">
+                </div>
+                <!-- success alert -->
+                <div class="succe" id="suc_ele">
+                </div>
+
+                <br>
+            </div>
+
+            <div class="section">
+                <!-- item list -->
+                <h1>List of Items</h1>
+                <div class="item-container" id="item_list">
+                    <h1 style="color: gray">No Items yet</h1>
+                </div>
+
+                <br>
+            </div>
+
+            <div class="section">
+                <!-- archive list -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="5">
+                                Archived Items
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Id</th>
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="archive_list">
+                        <tr>
+                            <td colspan="5" style="color: gray">
+                                No Items in the list yet
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br>
+            </div>
+
+            <div class="section">
+                <!-- transaction history -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="4">
+                                History
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Id</th>
+                            <th>Action</th>
+                            <th>Purpose</th>
+                            <th>Date and Time</th>
+                        </tr>
+                    </thead>
+                    <tbody id="trans_history">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <footer class="p-w-s-spn">
+            <hr>
+            Develop By Mr. Dirtiest Rat
+        </footer>
+    </div>
+</body>
+
+</html>

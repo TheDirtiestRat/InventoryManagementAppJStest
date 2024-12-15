@@ -1,0 +1,136 @@
+/* by mr. dirty rat */
+
+body {
+    margin: 0px;
+}
+
+.w-cnt {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+.content-area {
+    width: 75%;
+}
+
+.item-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 180x;
+    grid-auto-rows: 180px; */
+
+    gap: 0.8rem;
+    grid-auto-flow: row;
+}
+
+.error {
+    color: red;
+}
+
+.succe {
+    color: green;
+}
+
+.item {
+    padding: 0.8rem;
+    border: 1px solid black;
+    /* border-radius: 0.8rem; */
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 0.8rem;
+    grid-auto-flow: row;
+}
+
+.form-input {
+    padding: 1rem;
+}
+
+.form-input-sp2 {
+    grid-column: 1 / span 2;
+}
+
+.description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* number of lines to show */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+button {
+    padding: 1rem;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.js-cn-btw {
+    justify-content: space-between;
+}
+
+table {
+    width: 100%;
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 0.4rem;
+    border: 1px solid black;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.page-w-sidebar {
+    display: grid;
+    grid-template-columns: 25% 75%;
+
+}
+
+.dashboard-con {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.dsh-item {
+    text-align: center;
+}
+
+.d-spn-2 {
+    grid-column: 1 / span 2;
+}
+
+.p-w-s-spn {
+    grid-column: 1 / span 2;
+    text-align: center;
+}
+
+.sidebar {
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.content {
+    width: 100%;
+}

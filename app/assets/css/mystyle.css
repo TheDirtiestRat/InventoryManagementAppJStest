@@ -1,0 +1,39 @@
+body {
+    margin: 0px;
+}
+
+.w-cnt {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 75%;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 1rem;
+}
+
+.inpt_des {
+    grid-column: 1 / span 2;
+}
+
+.inpt_pad {
+    padding: 1rem;
+}
+
+.item-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 1rem;
+}
+
+.item {
+    border: 1px solid black;
+    padding: 1rem;
+}
